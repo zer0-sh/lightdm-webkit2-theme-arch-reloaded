@@ -20,13 +20,13 @@ The source of the wallpapers is [this reddit thread](https://www.reddit.com/r/ar
 - Session selection from available options on your system
 - That's it, true minimalism at its finest!
 
-## Screenshoots
+## Screenshots
 
-[Picture 1](session.png)
+![Picture 1](/screeshots/session.png)
 
-[Picture 2](username.png)
+![Picture 2](/screeshots/username.png)
 
-[Picture 3](pass.png)
+![Picture 3](/screeshots/password.png)
 
 
 Enjoy!! :D 
@@ -37,20 +37,24 @@ Enjoy!! :D
 
 ### Script
 1. Clone the repo
-
+```bash
 git clone https://gitlab.com/zer0-sh/lightdm-webkit-2-theme-arch-reloaded
-
+```
 2. Change directory
-
+```bash
 cd lightdm-webkit-2-theme-arch-reloaded
-
+```
 3. Give permissions
+```bash
 chmod +x ./install.sh
-
+```
 4. Execute with sudo 
+```bash
 sudo ./install
+```
 
 5. install
+Follow the prompts and instructions during the installation process.
 
 6. Enjoy
 
@@ -59,32 +63,37 @@ sudo ./install
 If you prefer to do it by hand.
 
 1. Clone the repository:
-
+```bash
 git clone https://gitlab.com/zer0-sh/lightdm-webkit-2-theme-arch-reloaded
-
+```
 2. Navigate to the cloned theme directory:
-
+```bash
 cd lightdm-webkit-2-theme-arch-reloaded
-
+```
 3. Copy the theme folder to the LightDM themes directory:
-
+```bash
 sudo cp -r . /usr/share/lightdm-webkit/themes/arch-reloaded
-
+```
 4. Edit the LightDM configuration file:
 Open the /etc/lightdm/lightdm.conf file in a text editor.
-
+```bash
 sudo nano /etc/lightdm/lightdm.conf
-
+```
 5. Add the theme configuration:
 Add the line webkit-theme=arch-reloaded under the [Seat:*] section or create this section if it doesn't exist.
-
+```bash
 [Seat:*]
 ...
 webkit-theme=arch-reloaded
-
+```
 6. Enjoy 
 ### AUR
 Future(?) Someday(?) Si Dios quiere xd (?)
+
+#
+
+<h3 align="center">𝒎𝒆𝒎𝒆𝒏𝒕𝒐 𝒎𝒐𝒓𝒊</h3>
+
 
 
 
