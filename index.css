@@ -1,12 +1,16 @@
+* {
+    user-select: none;
+}
+
 body {
     background-size: cover;
-    background-color: #101010;
+    background-color: #181A1B;
     color: #ededed;
 }
 
 #input {
     color: #ededed;
-    background-color: #101010;
+    background-color: transparent;
     border: none;
     outline: none;
     padding: 5px;
@@ -16,4 +20,29 @@ body {
     position: absolute;
     bottom: 20px;
     right: 20px;
+}
+
+#session-options a{
+    color: #57615E;
+    background-color: transparent;
+    text-decoration: none;
+    top: 20px; 
+    left: 20px; 
+    font-family: "Source Code Pro", monospace;
+    font-size: 13px;
+    max-width: 120px;
+    margin-right: 10px;
+}
+
+#session-options a:hover{
+    color: #ededed;
+}
+
+#session-selected-message {
+    color: #00e9a3;
+    font-family: "Source Code Pro", monospace;
+    font-size: 12px;
+    position: absolute;
+    top: 35px;
+    left: 20px;
 }
