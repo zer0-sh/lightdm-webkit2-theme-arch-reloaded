@@ -22,18 +22,28 @@ The source of the wallpapers is [this reddit thread](https://www.reddit.com/r/ar
 
 ## Screenshots
 
-![Picture 1](/screeshots/session.png)
+![Picture 1](/screenshots/session.png)
 
-![Picture 2](/screeshots/username.png)
+![Picture 2](/screenshots/username.png)
 
-![Picture 3](/screeshots/password.png)
+![Picture 3](/screenshots/password.png)
 
 
 Enjoy!! :D 
 
 ---
+## Requirements
 
-## How to install?
+To use this theme, make sure you meet the following requirements:
+
+- **Arch Linux**: This theme is specifically designed for Arch Linux users. While it may work on other distributions, it's optimized for Arch. I don't know if it works on Arch based distros.
+- **LightDM**: Ensure that you have LightDM installed and configured on your system.
+- **LightDM-Webkit2-Greeter**: You need to have LightDM-Webkit2-Greeter installed. If you haven't installed it yet, you can do so using your package manager.
+- **Git**: Git is required to clone the repository.
+- **Text Editor**: You'll need a text editor to make any configuration changes or customization to the theme files.
+
+
+## How to install? 🛠️
 
 ### Script
 1. Clone the repo
@@ -54,6 +64,7 @@ sudo ./install
 ```
 
 5. install
+
 Follow the prompts and instructions during the installation process.
 
 6. Enjoy
@@ -87,8 +98,10 @@ Add the line webkit-theme=arch-reloaded under the [Seat:*] section or create thi
 webkit-theme=arch-reloaded
 ```
 6. Enjoy 
-### AUR
+
+## AUR Package (Coming Soon)
 Future(?) Someday(?) Si Dios quiere xd (?)
+I'm currently working on packaging this theme for Arch Linux users via the Arch User Repository (AUR). This will make it even easier for you to install and manage updates for the theme.
 
 #
 
