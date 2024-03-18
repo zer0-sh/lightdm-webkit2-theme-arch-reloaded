@@ -1,5 +1,6 @@
 var selectedSessionKey;
 
+// Load the wallpaper, the selected user and the session options
 window.onload = function() {
     getImg();
     input.focus();
@@ -26,13 +27,14 @@ window.onload = function() {
             });
             this.classList.add("selected");
             sessionSelectedMessage.textContent = "Session changed to " + session.name + ":P";
-            // Almacena la clave de sesión seleccionada en la variable global
+            // Storage the selected session key
             selectedSessionKey = session.key;
         });
         sessionOptions.appendChild(option);
     });
 }
 
+// Listen for the enter key
 var input = document.getElementById("input");
 input.addEventListener("keydown", function (e) {
     if (e.keyCode === 13) {
@@ -44,7 +46,7 @@ window.authentication_complete = function() {
     if (lightdm.is_authenticated) {
         console.log("Authenticated!");
         $( 'body' ).fadeOut( 1000, () => {
-            // Utiliza la sesión seleccionada después de la autenticación
+            // Uses the selected session key
             lightdm.login(lightdm.authentication_user, selectedSessionKey);
         } );
     } else {
@@ -69,6 +71,7 @@ function getImg() {
         "url(wallpapers/" + pad(index, 2) + ".png)";
 }
 
+// Authenticate the user
 function authenticate(input_text) {
     if(!lightdm.in_authentication || !lightdm.authentication_user) {
         lightdm.authenticate(input_text);
