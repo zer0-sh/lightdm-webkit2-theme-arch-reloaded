@@ -63,7 +63,7 @@ function pad(a, b) {
 }
 // Add a random wallpaper
 function getImg() {
-    index = Math.floor(Math.random() * 25);
+    index = Math.floor(Math.random() * 32;
     console.log(pad(index,2));
     document.getElementsByTagName('body')[0].style.backgroundImage = 
         "url(wallpapers/" + pad(index, 2) + ".png)";
