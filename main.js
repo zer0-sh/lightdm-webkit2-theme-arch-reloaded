@@ -42,6 +42,7 @@ input.addEventListener("keydown", function (e) {
     }
 });
 
+// Authenticate the user
 window.authentication_complete = function() {
     if (lightdm.is_authenticated) {
         console.log("Authenticated!");
@@ -65,7 +66,7 @@ function pad(a, b) {
 }
 // Add a random wallpaper
 function getImg() {
-    index = Math.floor(Math.random() * 32);
+    index = Math.ceil(Math.random() * 32);
     console.log(pad(index,2));
     document.getElementsByTagName('body')[0].style.backgroundImage = 
         "url(wallpapers/" + pad(index, 2) + ".png)";
